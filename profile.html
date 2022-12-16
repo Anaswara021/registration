@@ -1,0 +1,19 @@
+{% extends 'uhome.html' %}
+{% block uhome %}
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="card mt-3">
+            <div class="card-header">My Profile</div>
+            <div class="card-body">
+                <p><b>First Name={{user_data.first_name}}</p>
+                <p><b>Last Name={{user_data.last_name}}</p>
+                <p><b>Username={{user_data.username}}</p>
+                    <p><b>Email={{user_data.email}}</p>
+            </div>
+            <div class="card-footer">Footer</div>
+            </div>
+            </div>
+    <div class="col-4"><a href="{% url 'addbio' %}"><button class="btn btn-secondary">ADD BIO</a></div>
+</div>
+{% endblock uhome %}
